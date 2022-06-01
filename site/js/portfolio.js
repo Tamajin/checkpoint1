@@ -30,3 +30,8 @@ btnName.addEventListener("click", function(event){
     changeColor.forEach(e => e.style.backgroundColor = enterColor);
     changeTextColor.forEach(e => e.style.color = enterColor);
 });
+
+// Change all a color
+
+const links = document.querySelectorAll("a");
+links.forEach(e => e.style.color = "#750ff7");

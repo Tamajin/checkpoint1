@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 .pink-bg {
   background-color: pink;
 }
@@ -21,14 +28,26 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+/* Instruction 2 : add a title, description and avatar centered for screen 700px and over */
+
 .description {
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px;
+  color: black;
+  padding: 10px 0;
+}
+
+.avatar{
+  display: block;
+  width: 150px;
+  height: 150px;
+  padding: 20px 0;
 }
 
 .description p {

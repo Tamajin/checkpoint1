@@ -35,3 +35,21 @@ btnName.addEventListener("click", function(event){
 
 const links = document.querySelectorAll("a");
 links.forEach(e => e.style.color = "#750ff7");
+
+// modify all li elements in front dev tools with click on btn
+
+const btnToolsPosition = document.querySelector("#front-dev-tools");
+const frontToolsLi = btnToolsPosition.querySelectorAll("li");
+const btnTools = document.createElement("button");
+btnTools.className = "btn-tools";
+btnTools.innerHTML = "Modify";
+btnToolsPosition.appendChild(btnTools);
+
+btnTools.addEventListener("click", function(event){
+    event.preventDefault();
+    for (let i = 0; i < frontToolsLi.length; i++){
+        frontToolsLi[0].innerHTML = "VSCode";
+        frontToolsLi[1].innerHTML = "GitHub";
+        frontToolsLi[2].innerHTML = "Inspector";
+    }
+});

@@ -35,10 +35,11 @@
     align-items: center;
   }
 
-  /* instruction 4 : skills lines inline when screen is 700px and over */
+  /* instruction 4 : skills lines inline when screen is 700px and over -- instruction 6 : front skills at first when inline */
 
   .skills{
     display: flex;
+    flex-direction: row-reverse;
   }
 }
 

@@ -15,12 +15,15 @@ myAvatar.addEventListener("click",function(){
 const btnName = document.createElement("button");
 const btnPosition = document.querySelector(".pink-bg");
 btnName.className = "btn-name";
-btnName.innerText = "Choose your Name"
+btnName.innerText = "Modify text and color"
 btnPosition.appendChild(btnName);
 btnName.addEventListener("click", function(event){
     event.preventDefault();
     const enterName = prompt("Enter your Name");
+    const enterColor = prompt("Choose a color");
     const changeName = document.querySelector("#name");
+    const changeColor = document.querySelector(".pink-bg");
     changeName.innerHTML = enterName;
     changeName.style.color = "white";
+    changeColor.style.backgroundColor = enterColor;
 });

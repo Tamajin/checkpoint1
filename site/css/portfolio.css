@@ -10,6 +10,19 @@
   color: #750ff7;
 }
 
+/* Instruction 1 : fix nav-bar issue when screen is over 700px */
+
+@media screen and (min-width : 700px) {  
+  .logo{
+    display: block;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .description {
   color: #ffffff;
   display: flex;

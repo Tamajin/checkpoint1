@@ -17,6 +17,14 @@
   border: 1px solid white;
 }
 
+.btn-tools{
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #f0acd1;
+  border: 1px solid white;
+}
+
 .pink-text {
   color: pink;
 }

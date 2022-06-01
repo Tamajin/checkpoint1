@@ -50,6 +50,13 @@
     flex-direction: row-reverse;
     justify-content: center;
   }
+
+  /* Super Bonus : list of projects inline when screen 700px and over */
+
+  .contents{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* Instruction 2 : add a title, description and avatar centered for screen 700px and over */
@@ -156,9 +163,17 @@ img {
   max-width: 100%;
 }
 
+.heading{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .projects a {
   color: #750ff7;
 }
+
 
 /* Bonus : create an opacity on projects without avalaible link */
 

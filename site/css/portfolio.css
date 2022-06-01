@@ -160,6 +160,12 @@ img {
   color: #750ff7;
 }
 
+/* Bonus : create an opacity on projects without avalaible link */
+
+.disabled{
+  opacity: 0.3;
+}
+
 p {
   padding-left: 15px;
   padding-right: 15px;

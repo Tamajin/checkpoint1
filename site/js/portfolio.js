@@ -22,8 +22,11 @@ btnName.addEventListener("click", function(event){
     const enterName = prompt("Enter your Name");
     const enterColor = prompt("Choose a color");
     const changeName = document.querySelector("#name");
-    const changeColor = document.querySelector(".pink-bg");
+    const changeColor = document.querySelectorAll(".pink-bg");
+    const changeTextColor = document.querySelectorAll(".pink-text");
     changeName.innerHTML = enterName;
     changeName.style.color = "white";
-    changeColor.style.backgroundColor = enterColor;
+
+    changeColor.forEach(e => e.style.backgroundColor = enterColor);
+    changeTextColor.forEach(e => e.style.color = enterColor);
 });

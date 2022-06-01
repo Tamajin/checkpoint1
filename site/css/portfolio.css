@@ -36,7 +36,7 @@
   }
 
   /* instruction 4 : skills lines inline when screen is 700px and over */
-  
+
   .skills{
     display: flex;
   }
@@ -75,8 +75,15 @@
   .desktop {
     display: none;
   }
-}  
 
+  /* instruction 5 : front skills above back skills when screen is 700px max */
+
+  .skills{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
 
 .description p {
   width: 60%;

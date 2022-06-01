@@ -27,37 +27,6 @@
 
 /* Instruction 1 : fix nav-bar issue when screen is over 700px */
 
-@media screen and (min-width : 700px) {  
-  .logo{
-    display: block;
-  }
-  
-  .navbar{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* instruction 4 : skills lines inline when screen is 700px and over -- instruction 6 : front skills at first when inline */
-
-  .skills{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-  }
-
-  /* Super Bonus : list of projects inline when screen 700px and over */
-
-  .contents{
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
 /* Instruction 2 : add a title, description and avatar centered for screen 700px and over */
 
@@ -82,32 +51,6 @@
 
 /* instruction 3 : delete desktop img when screen is 700px or smaller */
 
-@media screen and (max-width : 700px){
-  .logo{
-    display: block;
-  }
-  
-  .navbar{
-    display: flex;
-  }
-
-  .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .desktop {
-    display: none;
-  }
-
-  /* instruction 5 : front skills above back skills when screen is 700px max */
-
-  .skills{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-}
 
 .description p {
   width: 60%;
@@ -185,3 +128,85 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+  @media screen and (min-width : 700px) {  
+    .logo{
+      display: block;
+    }
+    
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* instruction 4 : skills lines inline when screen is 700px and over -- instruction 6 : front skills at first when inline */
+    
+    .skills{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+    
+    /* Super Bonus : list of projects inline when screen 700px and over */
+  
+    .contents{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+    @media screen and (max-width : 700px){
+      .logo{
+        display: block;
+      }
+      
+      .navbar{
+        display: flex;
+      }
+      
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .desktop {
+        display: none;
+      }
+      
+      /* instruction 5 : front skills above back skills when screen is 700px max */
+      
+      .skills{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      
+      .contents{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 40%;
+        padding: 30px;
+        border: 1px solid #e6ecf8;
+        margin: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+      }
+
+    }

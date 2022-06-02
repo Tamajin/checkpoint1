@@ -27,13 +27,13 @@ const persons = [
 
 function findAdults(arr) {
   const adultsMF = [];
-  const adultdM = arr.filter(e => e.sex === "male" && e.age > 18);
-  adultsMF.push(adultdM);
-  const adultdF = arr.filter(e => e.sex === "female" && e.age > 18);
+  const adultdF = arr.filter(e => e.sex === "female" && e.age >= 18
+  );
   adultsMF.push(adultdF);
+  const adultdM = arr.filter(e => e.sex === "male" && e.age >= 18);
+  adultsMF.push(adultdM);
   return adultsMF;
 };
 
-console.log(findAdults(persons))
 
 module.exports = findAdults;
